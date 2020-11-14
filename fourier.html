@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Fourier Series</title>
+        <meta name = "viewport" content = "width=device-width, initial-scale=1.0"> 
+        <link rel="stylesheet" href="styles/inputs.css">
+   		<link rel="stylesheet" href="styles/ploader.css">
+    </head>
+    <body>
+    	<div class="loader">
+    		<div><h1>A</h1></div>
+    	</div>
+        <canvas id="c"></canvas>
+        <div class="sliderctn">
+            <div class="sliderbox">
+            <span class="task">Cycles</span>
+                <input type="range" min="1" max="100" step="1" value="10" class ="slider cyc">
+                <span class="val"></span>
+            </div>
+            <div class="sliderbox">
+            <span class="task">Freq</span>
+                <input type="range" min="10" max="500" step="10" value="50" class ="slider freq">
+                <span class="val"></span>
+            </div>
+            <div class="sliderbox">
+            <span class="task">Amp</span>
+                <input type="range" min="5" max="50" step="5" value="25" class ="slider amp">
+                <span class="val"></span>
+            </div>
+            <div class="sliderbox">
+            <span class="task">Form</span>
+                <input type="range" min="1" max="50" step="1" value="20" class ="slider form">
+                <span class="val"></span>
+            </div>
+        </div>
+        <script type="text/javascript" src = "scripts/fourier.js"></script>
+    </body>
+</html>
